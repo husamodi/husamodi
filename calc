@@ -1,0 +1,35 @@
+list_of_oper = ["Addition" , "Subtraction" , "Multiplication" , "Division" ]
+print("***  Important Message =====>   MUST READ: *** \n Enter only the first letters of the operation you want ")
+print("-" * 10)
+print("")
+print(f" list ***---*** {list_of_oper} ***---***")
+print("")
+call_fun = input("choose the operation from this list above : (A ,S ,M ,D)?  ")
+print("#" * 10)
+if call_fun == "A" or call_fun == "a":
+    print("Sure (LETS GO) ..Addition")
+    first_num_add =  float(input("Enter first number : "))
+    second_num_add = float(input("Enter second number : "))
+    print(first_num_add + second_num_add)
+
+elif call_fun == "S" or call_fun == "s" :
+    print("Sure (LETS GO) ..Subtraction  ")
+    first_num_sub = float(input("Enter first number : "))
+    second_num_sub = float(input("Enter second number : "))
+    print(first_num_sub - second_num_sub)
+
+elif call_fun == "M" or call_fun == "m" :
+    print("Sure (LETS GO) ..Multiplication  ")
+    first_num_mult = float(input("Enter first number : "))
+    second_num_mult = float(input("Enter second number : "))
+    print(first_num_mult * second_num_mult)
+
+elif call_fun == "D" or call_fun == "d" :
+    print("Sure (LETS GO) ..Division  ")
+    first_num_divi = float(input("Enter first number : "))
+    second_num_divi = float(input("Enter second number : "))
+    print(first_num_divi / second_num_divi)
+
+
+else: print(" input not recognised , try again")
+
